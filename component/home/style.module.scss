@@ -1,0 +1,131 @@
+.like{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  gap: 38px;
+  .box{
+    box-sizing: border-box;
+    width: 192px;
+    height: 571px;
+    border: 1px solid #414141;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 0;
+    gap:40px;
+  }
+  .box1{
+    &:hover {
+      border: 1px solid #FFFFFF;
+      .one{
+        path{
+          fill: #fff;
+        }
+      }
+    }
+
+  }
+
+  .box2{
+    &:hover {
+      border: 1px solid #FFFFFF;
+      .one{
+        path{
+          fill: #9DEFBF;
+        }
+      }
+
+      .two{
+        path{
+          fill: #E84AA9;
+        }
+      }
+    }
+
+  }
+  .box3{
+    &:hover {
+      border: 1px solid #FFFFFF;
+      .one{
+        path{
+          fill: #60B1F4;
+        }
+      }
+
+      .two{
+        path{
+          fill: #E8424E;
+        }
+      }
+
+      .three{
+        path{
+          fill: #FF7F8E;
+        }
+      }
+    }
+  }
+  .box4{
+    &:hover {
+      border: 1px solid #FFFFFF;
+      .one{
+        path{
+          fill: #FF9193;
+        }
+      }
+
+      .two{
+        path{
+          fill: #EF9933;
+        }
+      }
+
+      .three{
+        path{
+          fill: #6C31D7;
+        }
+      }
+
+      .four{
+        path{
+          fill: #9741DA;
+        }
+      }
+    }
+  }
+
+  .box5{
+    &:hover {
+      border: 1px solid #FFFFFF;
+      .one{
+        path{
+          fill: #6C31D7;
+        }
+      }
+
+      .two{
+        path{
+          fill: #4291A8;
+        }
+      }
+
+      .three{
+        path{
+          fill: #77E39F;
+        }
+      }
+      .four{
+        path{
+          fill: #E8424E;
+        }
+      }
+      .five{
+        path{
+          fill: #A7CA45;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,144 @@
+.container{
+  width: 100vw;
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .option{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    .reSize{
+      transition: width 1s;
+      width: 532px !important;
+    }
+    .select{
+      position: relative;
+      width: 522px;
+      transition: width 1s;
+      height: 70px;
+      overflow-x: hidden;
+      background: #414141;
+      border-radius: 8px;
+      .run{
+        position: absolute;
+        transition: left 3s;
+        left: -280px;
+        top: 0;
+        height: 70px;
+        padding: 16px 28px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-weight: 400;
+        gap: 110px;
+        font-size: 20px;
+        line-height: 30px;
+        color: #717171;
+        text-transform: uppercase;
+        .element{
+          height: 100%;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+        }
+
+        .active{
+          background: #000000;
+          border-radius: 16px;
+          padding: 4px 8px;
+          color: white;
+        }
+        .connect{
+          position: absolute;
+          width: 121px;
+          height: 36px;
+          right: -160px;
+          top: 18px;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 30px;
+          cursor: pointer;
+          border: 1px solid #FFFFFF;
+          color: #FFFFFF;
+          background: transparent;
+          border-radius: 8px;
+        }
+      }
+      .menuInner{
+        position: absolute;
+        //margin-left: -280px;
+        top: 0;
+        left: 0;
+        height: 70px;
+        padding: 16px 28px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-weight: 400;
+        gap: 110px;
+        font-size: 20px;
+        line-height: 30px;
+        color: #717171;
+        text-transform: uppercase;
+        .element{
+          height: 100%;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+        }
+
+        .active{
+          background: #000000;
+          border-radius: 16px;
+          padding: 4px 8px;
+          color: white;
+        }
+      }
+
+    }
+  }
+
+  .bottom{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    width: 100%;
+    .link{
+      cursor: pointer;
+      width: 68px;
+      height: 68px;
+    }
+    .ichi{
+      background: url("/th.png") no-repeat;
+      background-size: contain;
+      &:hover{
+        background: url("/th2.png") no-repeat;
+        background-size: contain;
+      }
+    }
+
+    .ni{
+      background: url("/twitter.png") no-repeat;
+      background-size: contain;
+      &:hover{
+        background: url("/tw.png") no-repeat;
+        background-size: contain;
+      }
+    }
+
+    .san{
+      background: url("/tron.png") no-repeat;
+      background-size: contain;
+      &:hover{
+        background: url("/tron2.png") no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+}

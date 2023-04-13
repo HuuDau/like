@@ -1,0 +1,28 @@
+.container{
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+  .content{
+    color: #FFFFFF;
+    width: 500px;
+    min-height: 600px;
+
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #656565;
+    border-radius: 10px;
+    height: 50px;
+    border: 0px solid #ffffff;
+  }
+
+}

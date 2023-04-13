@@ -1,0 +1,110 @@
+.contain{
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #656565;
+    border-radius: 10px;
+    height: 50px;
+    border: 0px solid #ffffff;
+  }
+  @keyframes scal {
+    0%{
+      transform: scale(0.8);
+    }
+    50%{
+      transform: scale(1);
+    }
+    100%{
+      transform: scale(0.8);
+    }
+  }
+
+  @keyframes visibleT {
+    0%{
+      opacity: 0;
+    }
+
+    100%{
+      opacity: 1;
+    }
+  }
+
+  .like{
+    position: relative ;
+    overflow: auto;
+    padding: 124px 18px 22px 48px;
+    width: 600px;
+    height: 600px;
+    background: #1E1E1E;
+    border-radius: 24px;
+    ::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px grey;
+      border-radius: 5px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #656565;
+      border-radius: 5px;
+    }
+    .cText{
+      width: 100%;
+      height: 450px;
+      overflow: auto;
+      padding-right: 10px;
+      animation: visibleT 1.5s linear;
+      .desc{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+      }
+    }
+
+    .thu{
+      cursor: pointer;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      top: 48px;
+      left: 48px;
+      transition: top 1s, left 1s;
+      background: url("/likeClicks.png") no-repeat;
+      background-size: 100% 100%;
+    }
+    .iconLike{
+      cursor: pointer;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: scal 1.6s linear infinite;
+      width: 160px;
+      height: 160px;
+      top: 220px;
+      left: 220px;
+      background: url("/likeClicks.png") no-repeat;
+      background-size: 100% 100%;
+      }
+  }
+}
